@@ -40,6 +40,7 @@ a{
     color: black;
     text-decoration: underline;
     text-decoration-thickness: 8%;
+    cursor: pointer;
 }
 
 .main {
@@ -57,9 +58,17 @@ a{
 }
 
 .main-logo{
-    height: 50vh;
+    height: 70vh;
 }
 
 .logo-about{
+    display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+#mission{
+    margin-left: 2vh;
+    text-justify: distribute-all-lines;
+    text-align: justify;
 }
