@@ -58,17 +58,30 @@ a{
 }
 
 .main-logo{
-    height: 70vh;
+    height: 14vh;
 }
 
 .logo-about{
+    flex: 3;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.track-container{
+    flex: 1;
 }
 
 #mission{
     margin-left: 2vh;
     text-justify: distribute-all-lines;
     text-align: justify;
+}
+
+#daw-meaning{
+    text-align:center;
+    font-size: 3vh;
+    -webkit-transform:scale(1.75,1); /* Safari and Chrome */
+    transform:scale(1.75,1); /* W3C */
+    margin-top: 1vh;
 }
