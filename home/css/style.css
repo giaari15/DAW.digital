@@ -84,7 +84,5 @@ a{
 #daw-meaning{
     text-align:center;
     font-size: 3vh;
-    -webkit-transform:scale(1.75,1); /* Safari and Chrome */
-    transform:scale(1.75,1); /* W3C */
     margin-top: 1vh;
 }
