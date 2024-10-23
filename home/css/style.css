@@ -57,7 +57,13 @@ a{
     grid-row-start: 2;
     grid-row-end: 3;
     overflow-y: scroll;
+    scrollbar-width: none;  /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
     padding: 20px;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;  /* For Chrome, Safari, and WebKit browsers */
 }
 
 .main-logo{
@@ -85,4 +91,5 @@ a{
     text-align:center;
     font-size: 3vh;
     margin-top: 1vh;
+    font-style: italic;
 }
