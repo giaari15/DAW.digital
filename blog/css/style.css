@@ -15,11 +15,20 @@ html {
 }
 
 body {
-    display: flex;
+    display: grid;
+    grid-template-columns: [first] 2.25fr [second] 0.75fr;
+    grid-template-rows: [nav] 0.25fr [main] 3fr;
+    gap: 2vh;
+    column-gap: 10vh;
     padding: 2vh;
+    overflow: hidden;
 }
 
 .navbar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: flex;
 }
 
@@ -36,9 +45,44 @@ a{
 }
 
 .main {
-    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.sidebar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.main-logo{
+    height: 14vh;
+}
+
+.logo-about{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .track-container{
     flex: 1;
+}
+
+#mission{
+    margin-left: 2vh;
+    text-justify: distribute-all-lines;
+    text-align: justify;
+}
+
+#daw-meaning{
+    text-align:center;
+    font-size: 3vh;
+    margin-top: 1vh;
 }
