@@ -43,14 +43,33 @@ a{
 .main {
     grid-row: 2;
     grid-column: 2;
-    justify-content: center;
+    font-weight: 1000;
+    font-size: larger;
+    text-shadow: 0 0 3px #bfd630;
 }
 
-.track-container{
-    flex: 1;
+.image {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.image #logo1 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 45%;
+}
+
+.image #logo2 {
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    opacity: 45%;
 }
 
 h1 {
     margin-bottom: 2vh;
-    color: black;
+    color: #bfd630;
 }
