@@ -77,21 +77,6 @@ header {
     padding: 1em;
  }
 
- .main-text {
-    grid-area: main;
-    padding: 1em;
- }
- 
- 
- .main {
-    height: 100vh;
-    padding: 1em;
- }
- 
- 
- .main-logo{
-    height: 14vh;
- }
  
  
  .track-container{
@@ -110,5 +95,4 @@ header {
     text-align:center;
     font-size: 3vh;
     margin-top: 1vh;
- }
- 
+}
