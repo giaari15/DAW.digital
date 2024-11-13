@@ -4,95 +4,92 @@
     padding: 0;
     font-weight: 500;
     cursor: url('../assets/cursor.png'), auto;
-    box-sizing: border-box;
- }
- 
- 
- html, body {
+}
+
+html, body {
     height: 100%;
- }
- 
- 
- html {
+}
+
+html {
     background-color: rgb(255, 255, 255);
- }
- 
- body {
+}
+
+body {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto 1fr;
-    grid-template-areas: 
-        "header"
-        "main-view"
-        "main"
- }
- 
- @media only screen and (min-width: 768px) {
-    body {
-        display: grid;
-        grid-template-columns: 2.25fr 0.75fr;
-        grid-template-rows: auto 1fr;
-        grid-template-areas: 
-            "header header"
-            "main sidebar"
-     }
+    grid-template-columns: [first] 2.25fr [second] 0.75fr;
+    grid-template-rows: [nav] 0.25fr [main] 3fr;
+    gap: 2vh;
+    column-gap: 10vh;
+    padding: 2vh;
+    overflow: hidden;
+}
 
-     .sidebar {
-        grid-area: sidebar;
-        overflow-y: scroll;
-        padding: 1em;
-     }
-
-     .logo-about{
-        flex: 3;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-     }
-     
- }
- 
-header {
-    grid-area: header;
-    padding: 1em;
+.navbar {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     display: flex;
- }
- 
- 
- a{
+}
+
+a{
     text-decoration: none;
- }
- 
- 
- .nav-links {
+}
+
+.nav-links {
     margin-right: 2vh;
     color: black;
     text-decoration: underline;
     text-decoration-thickness: 8%;
     cursor: pointer;
- }
+}
 
- .main-view {
-    grid-area: main-view;
-    padding: 1em;
- }
+.main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
 
- 
- 
- .track-container{
+.sidebar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    overflow-y: scroll;
+    scrollbar-width: none;  /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    padding: 20px;
+}
+
+.sidebar::-webkit-scrollbar{
+    display: none;  /* For Chrome, Safari, and WebKit browsers */
+}
+
+.main-logo{
+    height: 14vh;
+}
+
+.logo-about{
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.track-container{
     flex: 1;
- }
- 
- 
- #mission{
+}
+
+#mission{
     margin-left: 2vh;
     text-justify: distribute-all-lines;
     text-align: justify;
- }
- 
- 
- #daw-meaning{
+}
+
+#daw-meaning{
     text-align:center;
     font-size: 3vh;
     margin-top: 1vh;
+    font-style: italic;
 }
