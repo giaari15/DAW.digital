@@ -93,3 +93,44 @@ a{
     margin-top: 1vh;
     font-style: italic;
 }
+
+#flyer {
+    width: 27vh;
+    height: auto;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 2.5vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: auto; 
+    overflow: auto; /* Enable scroll if needed */
+  }
+  
+  .modal-content {
+    margin: auto;
+    text-align: center;
+  }
+  
+  .modal-image {
+    display: inline-block;
+  }
+
+  .close {
+    color: #000;
+    position: fixed;
+    
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
